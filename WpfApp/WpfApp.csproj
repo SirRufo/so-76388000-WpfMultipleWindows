@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows10.0.17763.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Views\BarWindow.xaml" />
+      <None Remove="Views\FooWindow.xaml" />
+      <None Remove="Views\MainWindow.xaml" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+        <PackageReference Include="ReactiveUI" Version="18.4.44" />
+        <PackageReference Include="ReactiveUI.Fody" Version="18.4.44" />
+        <PackageReference Include="ReactiveUI.WPF" Version="18.4.44" />
+        <PackageReference Include="Scrutor" Version="4.2.2" />
+        <PackageReference Include="Unclassified.NetRevisionTask" Version="0.4.3">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Wpf.Extensions.Hosting" Version="1.1.2" />
+    </ItemGroup>
+
+</Project>
